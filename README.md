@@ -86,10 +86,10 @@ This web application serves as a vital digital tool for urban residents, empower
 
 
   ```sh
-          git clone
-          npm i
+          git clone https://github.com/nathanpereira1234/CivicTrack.git
 
-  ```  
+  ```
+### just clone once and than follow th further steps
 
   ```sh
           npm init
