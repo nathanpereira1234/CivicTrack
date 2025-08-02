@@ -15,7 +15,6 @@ The system enables seamless tracking of each issue’s resolution status, keepin
 - [📁 Project Structure](#-project-structure)
 
 - [🚀 Getting Started](#-getting-started)
-  - [☑️ Prerequisites](#-prerequisites)
   - [⚙️ Installation](#-installation)
 
 - [🎗 License](#-license)
