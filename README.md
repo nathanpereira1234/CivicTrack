@@ -17,8 +17,7 @@ The system enables seamless tracking of each issue’s resolution status, keepin
 - [🚀 Getting Started](#-getting-started)
   - [☑️ Prerequisites](#-prerequisites)
   - [⚙️ Installation](#-installation)
-  - [🤖 Usage](#🤖-usage)
-  
+
 - [🎗 License](#-license)
 - [🙌 Acknowledgments](#-acknowledgments)
 - [🔰 Contributing](#-contributing)
@@ -83,8 +82,17 @@ This web application serves as a vital digital tool for urban residents, empower
            └── .env
 
 ```
-#🎗-license
+##⚙️ Installation](#-installation)
+
+  ```sh
+          npm init
+          npm install
+
+  ```  
+
+##🎗-license
     MIT
-#🙌-acknowledgments)
+
+##🙌-acknowledgments)
     Nathan Joseph
     Rishi Jha
