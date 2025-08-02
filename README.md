@@ -7,3 +7,20 @@ The system enables seamless tracking of each issue’s resolution status, keepin
 <img src="frontend/assets/unnamed.png" height = 200px width = 200px alt="logo">
 
 
+
+## Table of contents
+
+- [📍 Overview](#-overview)
+- [👾 Features](#-features)
+- [📁 Project Structure](#-project-structure)
+
+- [🚀 Getting Started](#-getting-started)
+  - [☑️ Prerequisites](#-prerequisites)
+  - [⚙️ Installation](#-installation)
+  - [🤖 Usage](#🤖-usage)
+  
+- [🎗 License](#-license)
+- [🙌 Acknowledgments](#-acknowledgments)
+- [🔰 Contributing](#-contributing)
+
+---
