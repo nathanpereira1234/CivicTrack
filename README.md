@@ -47,24 +47,44 @@ This web application serves as a vital digital tool for urban residents, empower
 
 
 ```sh
-└── Web-Voice-marketing-Agent/
-    ├── markdown
-    │          └── blog
-    │               ├──blog_1.mdx
-    │               ├──blog_2.mdx
-    │               ├──blog_3.mdx
-    │               ├──blog_4.mdx
-    │               ├──blog_5.mdx
-    │               ├──blog_6.mdx
-    │               ├──blog_7.mdx
-    │               └── blog_8.mdx
-    ├── public
-    │      ├──images
-    │      │     ├── documentation
-    │      │     │     ├──axios.svg
-    │      │     │     ├──Categories=Nextjs.svg
-    │      │     │     ├──Categories=Reactjs.svg
-    │      │     │     ├──Categories=Tailwind.svg
-    │      │     │     ├──Categories
+└── CivicTrack/
+    ├── frontend
+    │          └── src
+    │               ├──App.jsx
+    │               ├──App.css
+    │               ├──index.css
+    │               └── componets
+    │               │        └──Issues
+    │               │        │      └──IssueCard.jsx
+    │               │        │      └── Issue.list.jsx
+    │               │        └──layout
+    │               │              └──Navbar.jsx
+    │               └── contexts
+    │               │       └──AuthContext.jsx
+    │               └── pages
+    │               │        └──AuthPages.css
+    │               │        └──HomePage.jsx
+    │               │        └──Homepage.css
+    │               │        └──IssueDetailPage.css
+    │               │        └──IssueDetailPage.jsx
+    │               │        └─LoginPage.jsx
+    │               │        └──MyIssuesPage
+    │               │        └──RegisterPage.css
+    │               │        └─RegisterPage.jsx
+    │               │        └──ReportIssuePage.jsx
+    ├               ├──assests
+    │                      ├──unnamed.png
+    │
+    ├── server
+    │      └── config
+    │      └── middleware
+    │      └── models
+    │      └── routes
+           └── .env
 
 ```
+#🎗-license
+    MIT
+#🙌-acknowledgments)
+    Nathan Joseph
+    Rishi Jha
