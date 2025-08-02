@@ -84,6 +84,13 @@ This web application serves as a vital digital tool for urban residents, empower
 ```
 ##⚙️ Installation](#-installation)
 
+
+  ```sh
+          git clone
+          npm i
+
+  ```  
+
   ```sh
           npm init
           npm install
