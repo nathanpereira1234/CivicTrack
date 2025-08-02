@@ -1,0 +1,64 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import IssueCard from '../components/issues/IssueCard'; // Reuse the IssueCard component
+import Navbar from '../components/layout/Navbar'; // Reuse the Navbar component
+
+const MyIssuesPage = () => {
+    const [myIssues, setMyIssues] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchMyIssues = async () => {
+            try {
+                // Get the auth token from localStorage
+                const token = localStorage.getItem('authToken');
+                const config = {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                };
+                
+                // Fetch issues from the new backend route
+                const { data } = await axios.get('http://localhost:5000/api/issues/myissues', config);
+                setMyIssues(data);
+            } catch (error) {
+                console.error('Failed to fetch your issues:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchMyIssues();
+    }, []);
+
+    return (
+        <div className="bg-gray-100 min-h-screen">
+            <Navbar /> {/* Use the Navbar component for a consistent header */}
+            <main className="p-4">
+                <div className="w-full max-w-7xl mx-auto">
+                    <Typography variant="h4" gutterBottom sx={{ mt: 2, mb: 4 }}>
+                        My Reported Issues
+                    </Typography>
+                    {loading ? (
+                        <p>Loading your issues...</p>
+                    ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {myIssues.length > 0 ? (
+                                myIssues.map(issue => (
+                                    <Link to={`/issue/${issue._id}`} key={issue._id} className="no-underline">
+                                        <IssueCard issue={issue} />
+                                    </Link>
+                                ))
+                            ) : (
+                                <p>You have not reported any issues yet.</p>
+                            )}
+                        </div>
+                    )}
+                </div>
+            </main>
+        </div>
+    );
+};
+
+export default MyIssuesPage;
